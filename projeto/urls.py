@@ -22,7 +22,5 @@ from recipes.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
     path('', include('recipes.urls')),
-    path('recipes/', include('recipes.urls')), # Definindo URL mãe (recipes) e indicando que todas as do arquivo recipes/urls.py serão filhas
 ]
